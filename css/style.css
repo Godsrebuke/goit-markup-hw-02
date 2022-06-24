@@ -1,4 +1,13 @@
-
+:root {
+    --primary-text-color:#212121;
+    --title-text-color:#FFFFFF;
+    --accent-text-color:#2196F3;
+    --contacts-text-color:#757575;
+    --primary-background-color:
+    #2F303A;
+}
+ 
+ 
  .body {
     background-color: #ffffff;
 
@@ -10,7 +19,7 @@
 
 
  .webstudio { 
-    color: #000000;
+    color: var(--primary-text-color);
 
 
     font-family: 'Raleway';
@@ -32,11 +41,11 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    color: #212121;
+    color: var(--primary-text-color);
  }
 
  .nav__link:hover {
-    color: #2196F3;
+    color: var(--accent-text-color)
  }
 
  .contacts {
@@ -48,14 +57,16 @@
     line-height: 16px;
     letter-spacing: 0.02em;
    
-    color: #757575;;
+    color: var(--contacts-text-color);
  }
 
  .contacts:hover {
-    color: #2196F3;
+    color: var(--accent-text-color);
  }
 
- 
+ .title__section {
+    background-color: var(--primary-background-color);
+ }
 
  .title {
     font-family: 'Roboto';
@@ -90,7 +101,7 @@
 
     color: #FFFFFF;
 
-    background: #2196F3;
+    background: var(--accent-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -107,7 +118,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #212121;
+    color: var(--primary-text-color);
 
 }
  
@@ -134,6 +145,10 @@
     letter-spacing: 0.03em;
 
     color: #212121;0
+}
+
+.section__team {
+    background-color:  #F5F4FA;
 }
 
 .igor {
@@ -169,12 +184,13 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
-    background: #F5F4FA;
+    color: var(--primary-text-color);
+   
 
 }
 
 .team__members {
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -182,12 +198,13 @@
     line-height: 19px;
     letter-spacing: 0.03em;
 
-    color: #212121;
-    background: #F5F4FA;
+    color: var(--primary-text-color);
+    
 
 }
 
 .team__post {
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -196,7 +213,31 @@
     letter-spacing: 0.03em;
 
     color: #757575;
-    background: #F5F4FA;
+   
+}
+
+
+
+.contacts__footer:hover {
+    color:var(--accent-text-color);
+}
+
+.card {     
+    width: 270px;
+    height: 368px;
+    
+    
+    background: var(--title-text-color);
+    
+    
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .adress {
@@ -207,7 +248,7 @@
     line-height: 24px;
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: var(--title-text-color);
 
 }
 
@@ -219,14 +260,15 @@
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
-
+    
     letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-
+    
+    
 }
 
-.contacts__footer:hover {
-    color:#2196F3;
+.footer {
+    background-color: var(--primary-background-color);
 }
+
+
 

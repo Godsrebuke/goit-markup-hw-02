@@ -18,7 +18,7 @@
  
 
 
- .webstudio { 
+ .logo { 
     color: var(--primary-text-color);
 
 
@@ -30,6 +30,10 @@
     text-decoration: none;
 
     letter-spacing: 0.03em;
+ }
+
+ .span__logo {
+    color: var(--accent-text-color);
  }
 
  .nav__link {
@@ -230,8 +234,8 @@
     background: var(--title-text-color);
     
     
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -264,6 +268,10 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.03em;
     
     
+}
+
+.contacts__footer:hover {
+    color: var(--accent-text-color);
 }
 
 .footer {

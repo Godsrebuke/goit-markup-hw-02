@@ -18,7 +18,7 @@
  
 
 
- .webstudio { 
+ .logo { 
     color: var(--primary-text-color);
 
 
@@ -30,6 +30,10 @@
     text-decoration: none;
 
     letter-spacing: 0.03em;
+ }
+
+ .span__logo {
+   color: var(--accent-text-color);
  }
 
  .nav__link {
@@ -66,22 +70,65 @@
 
  .button__all {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     color:var(--primary-text-color);
 
-    text-align: center;
+   
     letter-spacing: 0.03em;
-    width: 73px;
-    height: 38px;
+
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
  }
 
  .button__all:hover {
-    color: var(--accent-text-color);
-    background-color: var(--accent-text-color);
+  background-color: var(--accent-text-color);
+  color: var(--title-text-color);
  }
+ 
+
+
+
+ .cards {     
+   box-sizing: border-box;
+
+   width: 370px;
+   background: #FFFFFF;
+   border: 1px solid #EEEEEE;
+}
+
+.adress {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+
+   color: var(--title-text-color);
+
+}
+
+.contacts__footer {
+   
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   text-decoration: none;
+   
+   letter-spacing: 0.03em;
+   
+   
+}
+
+.contacts__footer:hover {
+   color: var(--accent-text-color);
+}
+
+.footer {
+   background-color: var(--primary-background-color);
+}

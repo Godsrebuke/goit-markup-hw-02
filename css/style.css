@@ -36,6 +36,7 @@
     color: var(--accent-text-color);
  }
 
+
  .nav__link {
     font-family: 'Roboto';
     font-style: normal;
@@ -47,6 +48,10 @@
 
     color: var(--primary-text-color);
  }
+
+ .is-active {
+    color: var(--accent-text-color);
+  }
 
  .nav__link:hover {
     color: var(--accent-text-color)

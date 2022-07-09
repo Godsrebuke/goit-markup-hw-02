@@ -36,6 +36,7 @@
    color: var(--accent-text-color);
  }
 
+
  .nav__link {
     font-family: 'Roboto';
     font-style: normal;
@@ -49,7 +50,11 @@
  }
 
  .nav__link:hover {
-    color: var(--accent-text-color)
+    color: var(--accent-text-color);
+ }
+
+ .is-active {
+   color: var(--accent-text-color);
  }
 
  .contacts {

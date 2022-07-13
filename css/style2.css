@@ -19,7 +19,7 @@
 
 
  .logo { 
-    color: var(--primary-text-color);
+    color: var();
 
 
     font-family: 'Raleway';
@@ -30,6 +30,19 @@
     text-decoration: none;
 
     letter-spacing: 0.03em;
+ }
+
+ .footer__logo {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+
+    letter-spacing: 0.03em;
+   color: var(--title-text-color);
  }
 
  .span__logo {
@@ -73,6 +86,10 @@
     color: var(--accent-text-color);
  }
 
+ .button {
+   cursor: pointer;
+ } 
+
  .button__all {
     font-family: 'Roboto';
     font-weight: 500;
@@ -88,10 +105,15 @@
     border-radius: 4px;
  }
 
- .button__all:hover {
-  background-color: var(--accent-text-color);
-  color: var(--title-text-color);
+
+ 
+ .button__all:hover,
+ .button__all:focus {
+
+   background-color: var(--accent-text-color);
+   color: var(--title-text-color);  
  }
+ 
  
 
 

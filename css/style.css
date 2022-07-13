@@ -261,6 +261,19 @@
 
 }
 
+.footer__logo {
+   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+ }
+
 .contacts__footer {
     
     font-family: 'Roboto';

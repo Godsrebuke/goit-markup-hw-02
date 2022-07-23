@@ -6,6 +6,12 @@
     --primary-background-color:
     #2F303A;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
  
  
  .body {
@@ -15,10 +21,13 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
  }   
- 
+
 
 
  .logo { 
+    margin-left: 215px;
+    margin-right: 93px;
+     
     color: var(--primary-text-color);
 
 
@@ -36,16 +45,36 @@
     color: var(--accent-text-color);
  }
 
- .nav {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
 
- }
 
+.nav__container {
+
+    width: 1200px;
+
+    display: flex;
+    align-items: center;
+ 
+}
+
+
+.site-nav-list {
+    display: flex;
+}
+
+.nav__link .item:not(:last-child) {
+    margin-right: 0px;
+}
+
+ 
  .nav__link {
+
+     display: block;
+     padding-top: 32px;
+     padding-bottom: 32px;
+   
+    margin-right: 50px;
+
+   
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -57,6 +86,7 @@
     color: var(--primary-text-color);
  }
 
+
  .is-active {
     color: var(--accent-text-color);
   }
@@ -65,7 +95,16 @@
     color: var(--accent-text-color)
  }
 
+ .site-adress-list {
+    display: flex;
+    
+ }
+
+
  .contacts {
+    margin-right: 50px;
+    
+
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -82,33 +121,41 @@
  }
 
  .title__section {
+    width: 100%;
+    padding: 200px 0px;
 
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    
     background-color: var(--primary-background-color);
  }
 
  .title {
+
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+
     font-family: 'Roboto';
-    font-style: normal;
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-
+    line-height: 1;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: #ffffff;
-    background-color: #2F303A;
+
+
+    color:#FFFFFF;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 696px;
 
  }
 
+
  .button {
+    display: inline;
+    margin: 0 auto;
+    padding: 10px 32px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -116,12 +163,11 @@
     line-height: 30px;
     cursor: pointer;
 
-
-
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+   
 
     color: #FFFFFF;
 
@@ -135,13 +181,6 @@
 
 .function {
 
-    position: absolute;
-    width: 1170px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
-
-    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;

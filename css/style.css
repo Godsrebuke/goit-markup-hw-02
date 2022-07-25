@@ -22,14 +22,34 @@
     font-family: 'Roboto', sans-serif;
  }   
 
+ .nav-container {
 
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+ 
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: 93px;
+  }
+
+.nav-items .item:not(:last-child) {
+    margin-right: 50px;
+}
+    
+.span__logo {
+    color: var(--accent-text-color);
+}
 
  .logo { 
-    margin-left: 215px;
-    margin-right: 93px;
-     
     color: var(--primary-text-color);
-
 
     font-family: 'Raleway';
     font-style: normal;
@@ -40,40 +60,13 @@
 
     letter-spacing: 0.03em;
  }
-
- .span__logo {
-    color: var(--accent-text-color);
- }
-
-
-
-.nav__container {
-
-    width: 1200px;
-
-    display: flex;
-    align-items: center;
  
-}
+ .nav-link {
 
-
-.site-nav-list {
-    display: flex;
-}
-
-.nav__link .item:not(:last-child) {
-    margin-right: 0px;
-}
-
- 
- .nav__link {
-
-     display: block;
-     padding-top: 32px;
-     padding-bottom: 32px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
    
-    margin-right: 50px;
-
    
     font-family: 'Roboto';
     font-style: normal;
@@ -84,27 +77,34 @@
     text-decoration: none;
 
     color: var(--primary-text-color);
+
  }
 
+.nav-link .item:not(:last-child) {
+     margin-right: 0px;
+ }
 
- .is-active {
-    color: var(--accent-text-color);
-  }
-
- .nav__link:hover {
+.nav-link:hover {
     color: var(--accent-text-color)
  }
+ 
 
- .site-adress-list {
+.is-active {                
+    color: var(--accent-text-color);
+}
+
+.contacts {
     display: flex;
-    
- }
+    margin-left: auto;
+}
+
+.contacts.item:not(:last-child) {
+  margin-right: 50px;
+
+}
 
 
- .contacts {
-    margin-right: 50px;
-    
-
+.contacts-item {
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -112,20 +112,22 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-   
+    
     color: var(--contacts-text-color);
- }
+}
 
- .contacts:hover {
-    color: var(--accent-text-color);
- }
+.contacts-item:hover {
+color: var(--accent-text-color);
+}
 
- .title__section {
-    width: 100%;
-    padding: 200px 0px;
+.title__section {
 
-    background-color: var(--primary-background-color);
- }
+ width: 100%;
+ padding: 200px 0px;
+
+background-color: var(--primary-background-color);
+
+}
 
  .title {
 
